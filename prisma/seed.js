@@ -72,11 +72,11 @@ const prisma = new PrismaClient();
         name: 'Julieta',
         lang: 'Node',
         missionCommander: 'Carlo Gilmar',
-        enrollments: 1,
+        enrollments: 1
       },
     });
 
-    console.log('Create 6 explorers');
+    //console.log('Create 6 explorers');
 
     const julieta1 = await prisma.student.upsert({
       where: { name: 'Julieta1' },
