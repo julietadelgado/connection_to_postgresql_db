@@ -58,12 +58,51 @@ const prisma = new PrismaClient();
       update: {},
       create: {
         name: 'Woopa 5',
-				username: 'ajolonauta5',
-				mission: 'Node'
+        username: 'ajolonauta5',
+        mission: 'Node'
       },
     });
 
     console.log('Create 6 explorers');
+
+    const julieta = await prisma.student.upsert({
+      where: { name: 'Julieta' },
+      update: {},
+      create: {
+        name: 'Julieta',
+        lang: 'Node',
+        missionCommander: 'Carlo Gilmar',
+        enrollments: 'Visual Thinking Básico',
+      },
+    });
+
+    console.log('Create 6 explorers');
+
+    const julieta1 = await prisma.student.upsert({
+      where: { name: 'Julieta1' },
+      update: {},
+      create: {
+        name: 'Julieta1',
+        lang: 'Java',
+        missionCommander: 'Fernanda Ochoa',
+        enrollments: 'Visual Thinking Básico, Visual Thinking Intermedio ',
+        hasCertification: true
+      },
+    });
+
+    const julieta2 = await prisma.student.upsert({
+      where: { name: 'Julieta2' },
+      update: {},
+      create: {
+        name: 'Julieta2',
+        lang: 'PHP',
+        missionCommander: 'Sarthak Shrivastava',
+        enrollments: 'Visual Thinking Básico, Visual Thinking Intermedio, Visual Thinking Avanzado',
+        hasCertification: true
+      },
+    });
+
+    console.log('Create 3 students');
   } catch(e) {
     console.error(e);
     process.exit(1);
