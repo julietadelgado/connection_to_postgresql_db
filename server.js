@@ -73,8 +73,10 @@ app.get('/students/:id', async (req, res) => {
 app.post('/students', async (req, res) => {
   const student = {
     name: req.body.name,
-    username: req.body.username,
-    mission: req.body.mission
+    lang: req.body.lang,
+    missionCommander: req.body.missionCommander,
+    enrollments: req.body.enrollments,
+    hasCertification: req.body.hasCertification
   };
   const message = 'student creado.';
   await prisma.student.create({data: student});
@@ -89,7 +91,7 @@ app.put('/students/:id', async (req, res) => {
       id: id
     },
     data: {
-      mission: req.body.mission
+      missionCommander: req.body.missionCommander
     }
   })
 
