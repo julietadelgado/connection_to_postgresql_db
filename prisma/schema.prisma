@@ -20,7 +20,7 @@ model Explorer {
   lastUpdated DateTime @updatedAt
 }
 
-model MissionCommander {
+model Student {
   id Int @id @default(autoincrement())
   name String
   lang String
