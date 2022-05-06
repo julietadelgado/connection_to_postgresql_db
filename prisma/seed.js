@@ -72,7 +72,7 @@ const prisma = new PrismaClient();
         name: 'Julieta',
         lang: 'Node',
         missionCommander: 'Carlo Gilmar',
-        enrollments: 'Visual Thinking Básico',
+        enrollments: 1,
       },
     });
 
@@ -85,7 +85,7 @@ const prisma = new PrismaClient();
         name: 'Julieta1',
         lang: 'Java',
         missionCommander: 'Fernanda Ochoa',
-        enrollments: 'Visual Thinking Básico, Visual Thinking Intermedio ',
+        enrollments: 2,
         hasCertification: true
       },
     });
@@ -97,7 +97,7 @@ const prisma = new PrismaClient();
         name: 'Julieta2',
         lang: 'PHP',
         missionCommander: 'Sarthak Shrivastava',
-        enrollments: 'Visual Thinking Básico, Visual Thinking Intermedio, Visual Thinking Avanzado',
+        enrollments: 3,
         hasCertification: true
       },
     });
