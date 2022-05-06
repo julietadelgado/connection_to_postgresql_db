@@ -76,8 +76,6 @@ const prisma = new PrismaClient();
       },
     });
 
-    //console.log('Create 6 explorers');
-
     const julieta1 = await prisma.student.upsert({
       where: { name: 'Julieta1' },
       update: {},
