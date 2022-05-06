@@ -57,3 +57,47 @@ app.delete('/explorers/:id', async (req, res) => {
   await prisma.explorer.delete({where: {id: id}});
   return res.json({message: "Eliminado correctamente"});
 });
+
+
+app.get('/students', async (req, res) => {
+  const allStudents =  await prisma.student.findMany({});
+  res.json(allStudents);
+});
+
+app.get('/students/:id', async (req, res) => {
+  const id = req.params.id;
+  const student = await prisma.student.findUnique({where: {id: parseInt(id)}});
+  res.json(student);
+});
+
+app.post('/students', async (req, res) => {
+  const student = {
+    name: req.body.name,
+    username: req.body.username,
+    mission: req.body.mission
+  };
+  const message = 'student creado.';
+  await prisma.student.create({data: student});
+  return res.json({message});
+});
+
+app.put('/students/:id', async (req, res) => {
+  const id = parseInt(req.params.id);
+
+  await prisma.student.update({
+    where: {
+      id: id
+    },
+    data: {
+      mission: req.body.mission
+    }
+  })
+
+  return res.json({message: "Student - Actualizado correctamente"});
+});
+
+app.delete('/students/:id', async (req, res) => {
+  const id = parseInt(req.params.id);
+  await prisma.student.delete({where: {id: id}});
+  return res.json({message: "Student - Eliminado correctamente"});
+});
