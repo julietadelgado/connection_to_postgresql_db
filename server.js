@@ -91,7 +91,11 @@ app.put('/students/:id', async (req, res) => {
       id: id
     },
     data: {
-      missionCommander: req.body.missionCommander
+      name: req.body.name,
+      lang: req.body.lang,
+      missionCommander: req.body.missionCommander,
+      enrollments: req.body.enrollments,
+      hasCertification: req.body.hasCertification
     }
   })
 
