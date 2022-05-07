@@ -200,7 +200,9 @@ app.delete('/explorers/:id', async (req, res) => {
 
 ### Create a new explorer:
 Type: POST 
+
 URL request: localhost:3000/explorers
+
 Body (type json): 
 ```javascript
 {
@@ -209,6 +211,7 @@ Body (type json):
     "mission": "Node"
 }
 ```
+
 Response:
 ```javascript
 {
@@ -218,34 +221,45 @@ Response:
 
 ### Update explorer:
 Type: PUT 
+
 URL request: localhost:3000/explorers/5
+
 Body (type json):
 ```javascript
 {"mission":"Node"}
 ```
+
 Response: 
 ```javascript
 {
     "message": "Actualizado correctamente"
 }
 ```
+
 You can validate the changes on your database
 
 ### Read all explorers:
 Type: GET 
+
 URL request: localhost:3000/explorers
+
 Response: When you send the request you will get a json with all the explorers as a response
 
 ### Read explorer by ID:
 Type: GET 
+
 URL request: localhost:3000/explorers/5
+
 Response: When you send the request you will get a json with the information of the explorer with the given ID
 
 
 ### Delete explorer:
 Type: DELETE 
+
 URL request: localhost:3000/explorers/5
+
 ```javascript
+
 Response: 
 {
     "message": "Eliminado correctamente"
@@ -386,7 +400,9 @@ app.delete('/students/:id', async (req, res) => {
 
 ### Create a new student:
 Type: POST 
+
 URL request: localhost:3000/students
+
 Body (type json): 
 ```javascript
 {
@@ -397,6 +413,7 @@ Body (type json):
     "hasCertification": false
 }
 ```
+
 Response:
 ```javascript
 {
@@ -406,7 +423,9 @@ Response:
 
 ### Update student:
 Type: PUT 
+
 URL request: localhost:3000/students/6
+
 Body (type json):
 ```javascript
 {
@@ -417,27 +436,34 @@ Body (type json):
     "hasCertification": true
 }
 ```
+
 Response: 
 ```javascript
 {
     "message": "Student - Actualizado correctamente"
 }
 ```
+
 You can validate the changes on your database
 
 ### Read all students:
 Type: GET 
+
 URL request: localhost:3000/students
+
 Response: When you send the request you will get a json with all the students as a response
 
 ### Read student by ID:
 Type: GET 
+
 URL request: localhost:3000/students/5
+
 Response: When you send the request you will get a json with the information of the student with the given ID
 
 
 ### Delete student:
 Type: DELETE 
+
 URL request: localhost:3000/students/5
 ```javascript
 Response: 
