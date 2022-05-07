@@ -211,6 +211,7 @@ Body (type json):
     "mission": "Node"
 }
 ```
+![image](https://user-images.githubusercontent.com/48570016/167271396-d083b482-61e9-4b15-aef6-148ee56fa375.png)
 
 Response:
 ```javascript
@@ -218,6 +219,9 @@ Response:
     "message": "Explorer creado."
 }
 ```
+
+![image](https://user-images.githubusercontent.com/48570016/167271379-dbe295d6-a0ae-4746-a112-b68eebb832a0.png)
+
 
 ### Update explorer:
 Type: PUT 
@@ -235,6 +239,7 @@ Response:
     "message": "Actualizado correctamente"
 }
 ```
+![image](https://user-images.githubusercontent.com/48570016/167271426-063f3d83-c99f-477d-90f4-78310fad2ee3.png)
 
 You can validate the changes on your database
 
@@ -245,12 +250,16 @@ URL request: localhost:3000/explorers
 
 Response: When you send the request you will get a json with all the explorers as a response
 
+![image](https://user-images.githubusercontent.com/48570016/167271438-d86954a5-17a1-4df4-a8b9-4812eb88032f.png)
+
 ### Read explorer by ID:
 Type: GET 
 
 URL request: localhost:3000/explorers/5
 
 Response: When you send the request you will get a json with the information of the explorer with the given ID
+
+![image](https://user-images.githubusercontent.com/48570016/167271448-40b39883-8377-4052-806a-b1dd5fddc354.png)
 
 
 ### Delete explorer:
@@ -265,6 +274,7 @@ Response:
     "message": "Eliminado correctamente"
 }
 ```
+![image](https://user-images.githubusercontent.com/48570016/167271456-26bd8f09-38e1-451a-9ed6-259742527ed5.png)
 
 ### Keep practicing
 
@@ -420,6 +430,7 @@ Response:
     "message": "student creado."
 }
 ```
+![image](https://user-images.githubusercontent.com/48570016/167271470-05cae022-bcf0-47e6-8e59-2d9c93e9f74a.png)
 
 ### Update student:
 Type: PUT 
@@ -443,6 +454,7 @@ Response:
     "message": "Student - Actualizado correctamente"
 }
 ```
+![image](https://user-images.githubusercontent.com/48570016/167271479-c7ed9c6f-8580-465d-82d5-6d1938b8c5df.png)
 
 You can validate the changes on your database
 
@@ -453,6 +465,8 @@ URL request: localhost:3000/students
 
 Response: When you send the request you will get a json with all the students as a response
 
+![image](https://user-images.githubusercontent.com/48570016/167271503-e7ee48ae-623b-4db2-8d2e-4c17852f227b.png)
+
 ### Read student by ID:
 Type: GET 
 
@@ -460,6 +474,7 @@ URL request: localhost:3000/students/5
 
 Response: When you send the request you will get a json with the information of the student with the given ID
 
+![image](https://user-images.githubusercontent.com/48570016/167271516-a8d16b33-4d1b-4bff-b49f-5e39a6ace0c4.png)
 
 ### Delete student:
 Type: DELETE 
@@ -471,3 +486,4 @@ Response:
     "message": "Student - Eliminado correctamente"
 }
 ```
+![image](https://user-images.githubusercontent.com/48570016/167271523-234991ee-ecb6-46f8-a29f-7c18d6a62abf.png)
