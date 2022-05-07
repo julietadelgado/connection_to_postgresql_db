@@ -21,7 +21,7 @@ Prisma is an open source next-generation ORM (Object-Relational Mapping) that fa
 
 7. Add the next model
 
-```
+```mermaid
 classDiagram
 class Explorer {
   int id autoincrement
@@ -256,7 +256,7 @@ Response:
 
 14. Add the next model
 
-```
+```mermaid
 classDiagram
 class Student {
   int id autoincrement
