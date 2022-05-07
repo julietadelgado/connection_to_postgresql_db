@@ -23,14 +23,15 @@ Prisma is an open source next-generation ORM (Object-Relational Mapping) that fa
 
 ```
 classDiagram
-	Explorer: int id (autoincrement())
-	Explorer: string name
-	Explorer: varchar(255) username
-	Explorer: varchar(255) mission
-	Explorer: boolean azureCertification (default(false))
-	Explorer: datetime dateCreated
-	Explorer: datetime lastUpdated 
-
+class Explorer {
+  int id autoincrement
+	string name
+	varchar username
+	varchar mission
+	boolean azureCertification default false
+	datetime dateCreated
+	datetime lastUpdated 
+}
 ```
 
 To achieve this, add the next code in shcema.prisma:
@@ -257,14 +258,16 @@ Response:
 
 ```
 classDiagram
-	Student: int id (autoincrement())
-	Student: string name
-	Student: varchar(255) lang
-	Student: varchar(255) missionCommander
-	Student: int enrollments
-	Student: boolean hasCertification (default(false))
-	Student: datetime dateCreated
-	Student: datetime lastUpdated 
+class Student {
+  int id autoincrement
+	string name
+	varchar lang
+	varchar missionCommander
+	int enrollments
+	boolean hasCertification default false
+	datetime dateCreated
+	datetime lastUpdated 
+}
 
 ```
 
